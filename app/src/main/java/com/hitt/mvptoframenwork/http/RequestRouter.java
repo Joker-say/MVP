@@ -16,11 +16,6 @@ import retrofit2.http.Part;
 import retrofit2.http.Path;
 import retrofit2.http.QueryMap;
 
-
-/**
- * Created by Shinelon on 2018/12/14.
- */
-
 public interface RequestRouter {
     @GET("{url}")
     Call<ResponseBody> getRequestBody(@Path("url") String url, @Body RequestBody route, @QueryMap Map<String, Object> map);

@@ -12,6 +12,11 @@ public class MVPApplication extends Application {
     public void onCreate() {
         super.onCreate();
         application = this;
+//        try {
+//           ClientManager.setCertificates(getAssets().open("xxx.cer"), getAssets().open("xxxx.cer"));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
     public static Context getContext() {
